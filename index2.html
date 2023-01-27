@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <body>
+      <h1>For loop statement exercise</h1>
+
+      <p>Press PLUS to display +1 to +10:</p>
+      <button onclick="plus()">PLUS</button>
+      <p id="+"></p>
+
+      <p>Press MINUS to display -1 to -10:</p>
+      <button onclick="minus()">MINUS</button>
+      <p id="-"></p>
+
+      <script>
+        function plus() {
+          for (let i = 1; i <= 10; i++) {
+            document.getElementById('+').innerHTML += i + ' ';
+          }
+        }
+
+        function minus() {
+          for (let i = -1; i >= -10; i--) {
+            document.getElementById('-').innerHTML += i + ' ';
+          }
+        }
+      </script>
+    </body>
+  </body>
+</html>
